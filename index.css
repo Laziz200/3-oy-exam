@@ -1,0 +1,136 @@
+/* body { font-family: Arial, sans-serif; padding: 20px; }
+    input, select, button { padding: 8px; font-size: 16px; margin-right: 230px; }
+    ul { margin-top: 20px; }
+    li { margin: 5px 0; } */
+
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        margin: 0;
+        padding: 40px 20px;
+        color: #333;
+      }
+  
+      /* Container - sahifa asosiy qismi */
+      .container {
+        background: #ffffff60;
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        width: 400px;
+        max-width: 90vw;
+      }
+  
+      h1 {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: #f33a02;
+        text-align: center;
+      }
+  
+      label {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 6px;
+        font-weight: 600;
+        color: #15ee01;
+      }
+  
+      input[type="number"],
+      select {
+        width: 100%;
+        padding: 10px 14px;
+        font-size: 16px;
+        border: 1.5px solid #f30707;
+        border-radius: 8px;
+        transition: border-color 0.3s ease;
+        box-sizing: border-box;
+      }
+  
+      input[type="number"]:focus,
+      select:focus {
+        outline: none;
+        border-color: #4a90e2;
+        box-shadow: 0 0 8px rgba(74,144,226,0.4);
+      }
+  
+      button {
+        margin-top: 25px;
+        width: 100%;
+        padding: 12px 0;
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        background: #4a90e2;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+  
+      button:hover {
+        background: #357ABD;
+      }
+  
+      ul {
+        margin-top: 30px;
+        padding-left: 20px;
+        max-height: 320px;
+        overflow-y: auto;
+        border-top: 1px solid #eee;
+      }
+  
+      li {
+        padding: 10px 12px;
+        margin-bottom: 10px;
+        background: #f9fafb;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        color: #444;
+      }
+  
+      li span.status {
+        font-weight: 700;
+        padding: 4px 8px;
+        border-radius: 12px;
+        font-size: 14px;
+        color: white;
+        user-select: none;
+      }
+  
+      li span.status.completed {
+        background-color: #28a745; /* yashil */
+      }
+  
+      li span.status.pending {
+        background-color: #dc3545; /* qizil */
+      }
+  
+      /* Scrollbar styles (Chrome, Edge) */
+      ul::-webkit-scrollbar {
+        width: 8px;
+      }
+  
+      ul::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 4px;
+      }
+  

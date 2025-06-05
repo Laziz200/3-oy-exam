@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Todos with Completed Filter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>User Todos</h1>
+
+    <label for="userId">Enter User ID:</label>
+    <input type="number" id="userId" min="1" max="10" placeholder="1 dan 10 gacha" />
+
+    <label for="completed">Completed:</label>
+    <select id="completed">
+      <option value="">-- All --</option>
+      <option value="true">True ✅</option>
+      <option value="false">False ❌</option>
+    </select>
+
+    <button onclick="getUserTodos()">Get Todos</button>
+
+    <ul id="todoList"></ul>
+    <video autoplay muted loop class="video-bg">
+        <source src="https://cdn.pixabay.com/video/2022/12/25/144156-784280927_tiny.mp4" type="video/mp4">
+        Sizning brauzeringiz videoni qo‘llab-quvvatlamaydi.
+      </video>
+      <script src="index.js"></script> 
+</body>
+</html>
