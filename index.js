@@ -8,8 +8,6 @@ function getUserTodos() {
       alert("Iltimos, userId kiriting!");
       return;
     }
-
-    // So'rov URL ni shakllantirish
     let url = `https://jsonplaceholder.typicode.com/todos?userId=${userId}`;
     if (completed === 'true' || completed === 'false') {
       url += `&completed=${completed}`;
